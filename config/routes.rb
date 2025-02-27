@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "hello/index"
+  get "hello/login_check"
   devise_for :accounts
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -12,4 +14,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # ルートを追加
+  get 'hello', to: 'hello#index'
 end

@@ -1,0 +1,26 @@
+<h1>Hello#login_check</h1>
+<p>Find me in app/views/hello/login_check.html.erb</p>
+
+<p>Logged in as: <%= @account.email %></p>
+<p>Account created at: <%= @account.created_at %></p>
+
+<%= button_to "Logout", destroy_account_session_path, method: :delete, class: "logout-button" %>
+
+<style>
+    .logout-button {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .logout-button:hover {
+        background-color: #ff1a1a;
+    }
+</style>

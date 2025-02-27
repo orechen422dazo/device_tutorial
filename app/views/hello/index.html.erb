@@ -1,0 +1,33 @@
+<h1>Hello#index</h1>
+<p><%= @msg %></p>
+<hr>
+<div class="link-container">
+  <%= link_to 'Login Check Page &gt;&gt;'.html_safe, { action: 'login_check' }, class: 'styled-link' %>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        font-size: 18px;
+    }
+    .link-container {
+        margin: 10px 0;
+    }
+    .styled-link {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 12px;
+    }
+    .styled-link:hover {
+        background-color: #45a049;
+    }
+</style>
