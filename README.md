@@ -1,24 +1,31 @@
-# README
+# Deviceを使ってみる
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Gemfileに`gem 'device'`を追加して`bundle install`する
 
-Things you may want to cover:
+```ruby
+gem 'devise'
+```
 
-* Ruby version
+2. `rails g devise:install`を実行する
 
-* System dependencies
+```shell
+bundle install
+```
 
-* Configuration
+3. インストールと設定をする。
+```shell
+rails g devise:install
+```
 
-* Database creation
+4. Deviceを生成する。
+「account」はDevice用のモデル。
 
-* Database initialization
+```shell
+rails g devise account
+```
 
-* How to run the test suite
+5. モデルを生成したらマイグレーションをする。
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+rails db:migrate
+```
